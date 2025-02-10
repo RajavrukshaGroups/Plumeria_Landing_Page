@@ -3,7 +3,7 @@ import LandingPage from './components/experience'
 import Navbar from './components/navbar'
 import Footer from './components/footer'
 import OngoingProjects from './components/our_ongoing_Projects'
-// import Highlights from './components/highlights'
+import Highlights from './components/highlights'
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <Navbar/>
       <LandingPage/>
       <OngoingProjects/>
+      <Highlights/>
       <Footer/>
-      {/* <Highlights/> */}
     </div>
     </>
   )

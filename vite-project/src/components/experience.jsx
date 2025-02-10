@@ -6,7 +6,7 @@ import Group from '../assets/Group 4wf.png';
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-gray-50 overflow-x-hidden mt-24">
       {/* Main container */}
-      <div className="relative container mx-auto px-4 py-8 ">
+      <div className="relative container mx-auto px-4 py-8 overflow-hidden">
         {/* Logo section */}
         <div className="absolute top-4 right-16 md:top-16 md:right-60 w-40 md:w-72">
           <img style={{width:'290px',height:'98px'}}

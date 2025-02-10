@@ -57,10 +57,10 @@ function Highlights() {
   ]
 
   return (
-    <div className="p-8 bg-white bg-[url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-q7TwiRVZfA3W7dr0dHJtVBseo2ehxF.png')] bg-cover">
+    <div className="p-8 bg-white bg-[url('https://img.freepik.com/premium-photo/green-leaves-white-background-copy-space-presentation-environment-leaf-plant_598925-1635.jpg?w=1060')] bg-cover">
       <h2 className="text-center text-4xl font-bold mb-12">
         <span className="text-[#C5A572]">OTHER </span>
-        {/* <span className="text-[#1B4D3E]">KEY HIGHLIGHTS</span> */}
+        <span className="text-[#1B4D3E]">KEY HIGHLIGHTS</span>
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

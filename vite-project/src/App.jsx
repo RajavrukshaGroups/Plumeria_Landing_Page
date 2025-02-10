@@ -1,7 +1,8 @@
 import React from 'react'
 import LandingPage from './components/experience'
 import Navbar from './components/navbar'
-import Highlights from './components/highlights'
+import Footer from './components/footer'
+// import Highlights from './components/highlights'
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
     <div className='App'>
       <Navbar/>
       <LandingPage/>
-      {/* <Highlight/> */}
+      <Footer/>
+      {/* <Highlights/> */}
     </div>
     </>
   )

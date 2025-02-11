@@ -55,7 +55,7 @@ function Footer() {
           </li>
         </ul>
 
-        <p class="text-base text-gray-300">© ReadymadeUI. All rights reserved.</p>
+        <p class="text-base text-gray-300">© . All rights reserved.</p>
       </div>
     </footer>
   )

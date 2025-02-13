@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer class="bg-gray-900 text-white py-12 px-4 font-sans tracking-wide">
+    <footer class="bg-[#0b3d2c] text-white py-12 px-4 font-sans tracking-wide">
       <div class="text-center">
         <h6 class="text-lg text-gray-300">Stay connected with us:</h6>
 

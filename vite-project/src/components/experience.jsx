@@ -1,16 +1,16 @@
 // import Image from "next/image"
 import { Users, Award, HandCoins } from "lucide-react";
-import Logo from '../assets/RRPL_Logo.jpg';
+import Logo from '../assets/Plumeria Logoblack.png';
 import Group from '../assets/Group 4wf.png';
   function LandingPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white to-gray-50 overflow-x-hidden mt-24">
+    <div className="min-h bg-gradient-to-br from-white to-gray-50 overflow-x-hidden mt-24 overflow-hidden">
       {/* Main container */}
-      <div className="relative container mx-auto px-4 py-8 ">
+      <  div className="relative container mx-auto px-4 py-8 ">
         {/* Logo section */}
         <div className="absolute top-4 right-16 md:top-16 md:right-60 w-40 md:w-72">
           <img style={{width:'290px',height:'98px'}}
-          src={'https://rajavrukshagroup.in/static/media/RRPL_Horizontal_new.5ab94d802e9cb7659b6a.webp'}
+          src={Logo} 
             // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-10%20094550-aygjxmvz2xshy0zZuZq7RBYZg1MnMq.png"
             // alt="Rajavruksha Realtors Logo"
             width={110}
@@ -31,7 +31,6 @@ import Group from '../assets/Group 4wf.png';
               priority
             />
           </div>
-
           {/* Right side content */}
           <div className="space-y-8">
             {/* Stats section */}

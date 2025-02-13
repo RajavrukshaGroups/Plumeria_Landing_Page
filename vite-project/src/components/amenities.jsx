@@ -63,18 +63,18 @@ function Amenities() {
       <div className="card-container bg-[#004236] w-full md:w-[60%] flex justify-center items-center p-6 rounded-xl shadow-xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
           {[
-            { name: "A Wide Black Top Road", image: "https://images.pexels.com/photos/1745766/pexels-photo-1745766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" },
-            { name: "Individual Water Connection", image: "https://v1.tailwindcss.com/img/card-top.jpg" },
-            { name: "CCTV Surveillance", image: "https://v1.tailwindcss.com/img/card-top.jpg" },
-            { name: "Play Area", image: "https://v1.tailwindcss.com/img/card-top.jpg" },
-            { name: "Park", image: "https://v1.tailwindcss.com/img/card-top.jpg" },
-            { name: "Street Lights", image: "https://v1.tailwindcss.com/img/card-top.jpg" },
+            { name: "A Wide Black Top Road", image: "https://cdn-icons-png.flaticon.com/512/2554/2554922.png" },
+            { name: "Individual Water Connection", image: "https://cdn-icons-png.flaticon.com/512/12029/12029553.png" },
+            { name: "CCTV Surveillance", image: "https://cdn-icons-png.flaticon.com/512/2642/2642715.png" },
+            { name: "Play Area", image: "https://cdn-icons-png.flaticon.com/512/6429/6429547.png" },
+            { name: "Park", image: "https://cdn-icons-png.flaticon.com/512/2169/2169407.png" },
+            { name: "Street Lights", image: "https://cdn-icons-png.flaticon.com/512/829/829252.png" },
           ].map((item, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
             >
-              <img src={item.image} alt={item.name} className="w-full h-44 object-cover rounded-t-xl" />
+              <img src={item.image} alt={item.name} className="w-30 justify-center flex m-auto h-36 object-cover rounded-t-xl" />
               <h4 className="bg-orange-300 text-center text-white text-lg md:text-xl py-3 font-semibold">
                 {item.name}
               </h4>

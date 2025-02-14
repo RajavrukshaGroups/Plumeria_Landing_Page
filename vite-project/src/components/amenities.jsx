@@ -12,8 +12,6 @@ function Amenities() {
           <h3 className="font-bold text-3xl md:text-5xl text-gray-700">Amenities</h3>
         </div>
       </div>
-
-      {/* Right Section - Amenities Cards */}
       <div className="card-container bg-[#004236] w-full md:w-[60%] flex justify-center items-center p-6 rounded-xl shadow-xl">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
           {[
@@ -26,8 +24,7 @@ function Amenities() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl"
-            >
+              className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
               <img src={item.image} alt={item.name} className="w-30 justify-center flex m-auto h-36 object-cover rounded-t-xl" />
               <h4 className="bg-orange-300 text-center text-white text-lg md:text-xl py-3 font-semibold">
                 {item.name}

@@ -2,14 +2,19 @@
 import { Users, Award, HandCoins } from "lucide-react";
 import Logo from '../assets/Plumeria Logoblack.png';
 import Group from '../assets/Group 4wf.png';
-  function LandingPage() {
+  function LandingPage () {
+
   return (
-    <div className="min-h bg-gradient-to-br from-white to-gray-50 overflow-x-hidden mt-24 overflow-hidden">
+    <div className="min-h h-[770px] bg-gradient-to-br from-white to-gray-50 overflow-x-hidden  overflow-hidden">
+      <div>
+        <h1 className="pt-6 text-5xl font-bold text-black flex m-auto justify-center">Exclusive Premium Plots</h1>
+        <p className="p-10 pl-[140px] pr-[140px] text-xl">Plumeria is a thoughtfully designed residential project that blends modern comfort with natural serenity. Nestled in a prime location, it offers residential plots, lush green surroundings, and amenities. Whether you're looking for a peaceful retreat or a vibrant community, Plumeria provides the perfect balance of luxury and tranquility, making it an ideal place to call home.</p>
+      </div>
       {/* Main container */}
-      <  div className="relative container mx-auto px-4 py-8 ">
+      <  div className="relative container mx-auto px-2 py-8 ">
         {/* Logo section */}
-        <div className="absolute top-4 right-16 md:top-16 md:right-60 w-40 md:w-72">
-          <img style={{width:'290px',height:'98px'}}
+        <div className="absolute  right-16 md:top-16 md:right-60 w-40 md:w-72">
+          <img style={{width:'240px',height:'98px', marginTop:'100px'}}
           src={Logo} 
             // src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-02-10%20094550-aygjxmvz2xshy0zZuZq7RBYZg1MnMq.png"
             // alt="Rajavruksha Realtors Logo"
@@ -23,7 +28,7 @@ import Group from '../assets/Group 4wf.png';
           {/* Left side with image */}
           <div className="relative w-full h-[300px] md:h-[674px] rounded-2xl overflow-hidden">
             <img
-              src={Group}
+              src={'https://norman-spencer.com/wp-content/uploads/2019/06/houseflip.jpg'}
               alt="Luxury Home"
               
               fill
@@ -66,10 +71,10 @@ import Group from '../assets/Group 4wf.png';
 
             {/* Main heading */}
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl font-bold text-[#1E4D3A]">A Lifestyle Beyond Compare</h1>
-              <p className="text-xl md:text-2xl text-[#1E4D3A]">
+              {/* <h1 className="text-4xl md:text-5xl font-bold text-[#1E4D3A]">Exclusive Premium Plots</h1> */}
+              {/* <p className="text-xl md:text-2xl text-[#1E4D3A]">
                 Explore Rajavruksha for Premium Residential Plots in North Bangalore.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

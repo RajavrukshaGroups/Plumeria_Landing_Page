@@ -22,13 +22,13 @@ function GetInTouch() {
     consent: "",
   });
 
-  // const handleCaptcha =(value)=>{
-  //   if(value){
-  //     setCaptchaVerified(true)
-  //   }else{
-  //     setCaptchaVerified(false)
-  //   }
-  // }
+  const handleCaptcha =(value)=>{
+    if(value){
+      setCaptchaVerified(true)
+    }else{
+      setCaptchaVerified(false)
+    }
+  }
 
   const submitHandler = async (e) => { 
     console.log('form submit handler',formData)
@@ -50,10 +50,10 @@ function GetInTouch() {
     // } else if (!/^\d{10}$/.test(formData.phone_no)) {
     //   formErrors.phone_no = "Phone number must be exactly 10 digits";
     // }
-    // if (!captchaVerified) {
-    //   alert("Please complete the reCAPTCHA.");
-    //   return;
-    // }
+    if (!captchaVerified) {
+      alert("Please complete the reCAPTCHA.");
+      return;
+    }
     const hasErrors = Object.values(formErrors).some((err) => err !== "");
     if (hasErrors) return;
     try {
@@ -232,12 +232,12 @@ function GetInTouch() {
           <div>
           <div className="recaptcha-container">
             <div container spacing={2} style={{ justifyContent: "center" }}>
-              {/* <div item xs={12}>
+              <div item xs={12}>
                 <ReCAPTCHA
                   sitekey="6Lf165EqAAAAAGMB2fjKkFOvkFPTXrgoOoa4lXs9"
                   onChange={handleCaptcha}
                 />
-              </div> */}
+              </div>
             </div>
           </div>
             <button

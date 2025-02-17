@@ -2,10 +2,7 @@ import React from 'react'
 import { Plane, MapPin, Building2, GraduationCap, Factory, LandPlot, Hospital, Mountain } from "lucide-react"
 
 function Highlights() {
-//   return (
-    // <div>
 
-{/* export default function KeyHighlights() { */}
   const highlights = [
     {
       icon: <Plane className="w-8 h-8 text-[#C5A572]" />,
@@ -23,7 +20,7 @@ function Highlights() {
       icon: <Building2 className="w-8 h-8 text-[#C5A572]" />,
       title: "Growing ITIR/SEZ sector",
       description:
-        "Doddaballapura is home to many IT-ITeS parks, SEZs, and business centers, which has led to a growing IT-ITES sector in the area. This provides employment opportunities and increases demand for residential properties in the region.",
+        "ncreases demand for residential properties in the region. For example, Foxconn is setting up an iPhone assembly plant (Project Elephant) in Karnataka, located in Doddaballapur.",
     },
     {
       icon: <GraduationCap className="w-8 h-8 text-[#C5A572]" />,
@@ -33,9 +30,9 @@ function Highlights() {
     },
     {
       icon: <Factory className="w-8 h-8 text-[#C5A572]" />,
-      title: "Presence of KIADB industrial clusters",
+      title: "KIADB Industrial Sectors",
       description:
-        "Doddaballapura is home to several industrial clusters, including those related to automobile and Apparel park, etc.,",
+        "Doddaballapura is home to several industrial clusters. Including those related to automobile and Apparel park, etc..",
     },
     {
       icon: <LandPlot className="w-8 h-8 text-[#C5A572]" />,
@@ -45,14 +42,14 @@ function Highlights() {
     },
     {
       icon: <Hospital className="w-8 h-8 text-[#C5A572]" />,
-      title: "Healthcare services are well-established.",
+      title: "Healthcare services",
       description: "North Bengaluru is enriched with numerous multi-specialty hospitals providing excellent services.",
     },
     {
       icon: <Mountain className="w-8 h-8 text-[#C5A572]" />,
       title: "Tourism potential",
       description:
-        "North Bengaluru has several tourist attractions, such as the historic Ghati Subramanya temple and the upcoming ropeway to Nandi Hills, which could be developed further to attract more tourists.",
+        "North Bangalore has tourists attractions such as Ghati Subhramanya temple and Nandi Hills etc..",
     },
   ]
 
@@ -73,7 +70,6 @@ function Highlights() {
         ))}
       </div>
     </div>
-    // </div>
   )
 }
 

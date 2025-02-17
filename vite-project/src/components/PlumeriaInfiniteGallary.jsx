@@ -13,7 +13,7 @@ import VariableProximity from "../components/utils/VariableProximity";
 export function InfiniteMovingCardsDemo() {
   const containerRef = useRef(null);
   return (
-    <div className="inf-gal-plum h-[40rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="inf-gal-plum h-[30rem] rounded-md flex flex-col antialiased dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
       <h1 className="plumeria-gal-title">
         <div ref={containerRef} style={{ position: "relative" }}>
           <VariableProximity

@@ -128,31 +128,22 @@ Connect With Us
         </p>
 
         <ul className="mt-8 flex gap-6">
+        <li>
+  <a
+    href="https://www.facebook.com/RajavruskhaRealtors" // External link for Facebook
+    rel="noreferrer"
+    target="_blank"
+    className="text-gray-700 transition hover:opacity-75"
+  >
+    <span className="sr-only">Facebook</span>
+    <svg xmlns="http://www.w3.org/2000/svg" className="fill-blue-600 w-8 h-8" viewBox="0 0 49.652 49.652">
+      <path d="M24.826 0C11.137 0 0 11.137 0 24.826c0 13.688 11.137 24.826 24.826 24.826 13.688 0 24.826-11.138 24.826-24.826C49.652 11.137 38.516 0 24.826 0zM31 25.7h-4.039v14.396h-5.985V25.7h-2.845v-5.088h2.845v-3.291c0-2.357 1.12-6.04 6.04-6.04l4.435.017v4.939h-3.219c-.524 0-1.269.262-1.269 1.386v2.99h4.56z" />
+    </svg>
+  </a>
+</li>
           <li>
             <a
-              href="#"
-              rel="noreferrer"
-              target="_blank"
-              className="text-gray-700 transition hover:opacity-75"
-            >
-              <span className="sr-only">Facebook</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="fill-blue-600 w-8 h-8" viewBox="0 0 49.652 49.652">
-                <path d="M24.826 0C11.137 0 0 11.137 0 24.826c0 13.688 11.137 24.826 24.826 24.826 13.688 0 24.826-11.138 24.826-24.826C49.652 11.137 38.516 0 24.826 0zM31 25.7h-4.039v14.396h-5.985V25.7h-2.845v-5.088h2.845v-3.291c0-2.357 1.12-6.04 6.04-6.04l4.435.017v4.939h-3.219c-.524 0-1.269.262-1.269 1.386v2.99h4.56z" data-original="#000000" />
-              </svg>
-
-              {/* <svg className="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  fillRule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clipRule="evenodd"
-                />
-              </svg> */}
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="#"
+              href="https://www.linkedin.com/company/rajavruksha-realtors-limited/"
               rel="noreferrer"
               target="_blank"
               className="text-gray-700 transition hover:opacity-75"
@@ -175,7 +166,7 @@ Connect With Us
 
           <li>
             <a
-              href="#"
+              href="https://www.instagram.com/rajavruksha_realtors/"
               rel="noreferrer"
               target="_blank"
               className="text-gray-700 transition hover:opacity-75"
@@ -211,7 +202,7 @@ Connect With Us
 
           <li>
             <a
-              href="#"
+              href="https://x.com/Rajavrukshagrps"
               rel="noreferrer"
               target="_blank"
               className="text-gray-700 transition hover:opacity-75"
@@ -232,7 +223,7 @@ Connect With Us
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <a
               href="#"
               rel="noreferrer"
@@ -249,7 +240,7 @@ Connect With Us
                 />
               </svg>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
 
@@ -288,11 +279,11 @@ Connect With Us
             </li>
 
             <li>
-              <p href="#" className="text-gray-700 transition hover:opacity-75"> 09:30 am : 06:30 pm </p>
+              <p href="#" className="text-white transition hover:opacity-75"> 09:30 am : 06:30 pm </p>
             </li>
 
             <li>
-              <p href="#" className="text-gray-700 transition hover:opacity-75"> Weekly Off : Tuesday</p>
+              <p href="#" className="text-white transition hover:opacity-75"> Weekly Off : Tuesday</p>
             </li>
           </ul>
         </div>
@@ -309,9 +300,9 @@ Connect With Us
               <a href="#" className="text-white transition hover:opacity-75"> enquiry@rajavrukshagroup.in </a>
             </li>
 
-            <li>
+            {/* <li>
               <a href="#" className="text-white transition hover:opacity-75"> North Bangalore, Doddaballapura </a>
-            </li>
+            </li> */}
           </ul>
         </div>
 

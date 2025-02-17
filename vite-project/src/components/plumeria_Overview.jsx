@@ -5,7 +5,6 @@ import nature from "../assets/nature.png";
 import amenity from "../assets/amenity.png";
 import "./utils/plumOverview.css";
 import VariableProximity from "../components/utils/VariableProximity";
-// import VariableProximity from "../components/utils/VariableProximity.jx";
 
 const PlumeriaOverview = () => {
   const containerRef = useRef(null);

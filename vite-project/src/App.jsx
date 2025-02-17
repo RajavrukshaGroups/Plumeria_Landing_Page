@@ -6,7 +6,7 @@ import OngoingProjects from './components/our_ongoing_Projects';
 import Highlights from './components/highlights';
 import Amenities from './components/amenities';
 import GetInTouch from './components/getInTouch';
-import Location from './components/location';
+// import Location from './components/location';
 import PageTitle from './components/pageTitle';
 import PlumeriaOverview from './components/plumeria_Overview';
 import  {InfiniteMovingCardsDemo}  from './components/PlumeriaInfiniteGallary';
@@ -27,7 +27,7 @@ function App() {
       {/* <OngoingProjects/> */}
       <Amenities/>
       <GetInTouch/>
-          <Location/>
+      {/* <Location/> */}
       <Footer/>
     </div>
     </>

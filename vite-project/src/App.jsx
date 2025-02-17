@@ -11,6 +11,8 @@ import PageTitle from './components/pageTitle';
 import PlumeriaOverview from './components/plumeria_Overview';
 import  {InfiniteMovingCardsDemo}  from './components/PlumeriaInfiniteGallary';
 import '../src/components/styles/pagetitle.css'
+import { ToastContainer } from 'react-toastify';
+
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
       {/* <OngoingProjects/> */}
       <Amenities/>
       <GetInTouch/>
+      <div className="toast-wrapper">
+                <ToastContainer/>
+            </div>
       {/* <Location/> */}
       <Footer/>
     </div>

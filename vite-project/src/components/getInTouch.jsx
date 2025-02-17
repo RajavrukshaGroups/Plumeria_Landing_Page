@@ -36,26 +36,21 @@ function GetInTouch() {
     e.preventDefault();
     let formErrors = { ...error};
 
-    if (formData.name === "") {
-      ErrorMessage("Please enter name")
-    }
-    if (formData.email === "") {
-      ErrorMessage("Please enter email")
-    } 
-    if (formData.subject === "") {
-      ErrorMessage("Please enter subject")
-    }
-    if (formData.lastname === ""){
-      ErrorMessage("Please enter lastname")
-    }
-    if (formData.notes === "") {
-      ErrorMessage("Please enter note")
-    }
-    if (formData?.phone_no === "") {
-      errorMessage("Please enter phone number")
-    } else if (!/^\d{10}$/.test(formData.phone_no)) {
-      errorMessage("Phone number must be exactly 10 digits")
-    }
+    // if (formData.name === "") formErrors.name = "Please enter name";
+    // // if (formData.name === "") formErrors.name("Please enter name");
+    // if (formData.email === "") {
+    //   formErrors.email = "Please enter email";
+    // } else if (!emailRegex.test(formData.email)) {
+    //   formErrors.email = "Please enter a valid email address";
+    // }
+    // if (formData.subject === "") formErrors.subject = "Please enter subject";
+    // if (formData.lastname === "") formErrors.lastname = "Please enter lastname";
+    // if (formData.notes === "") formErrors.notes = "Please enter note";
+    // if (formData?.phone_no === "") {
+    //   formErrors.phone_no = "Please enter phone number";
+    // } else if (!/^\d{10}$/.test(formData.phone_no)) {
+    //   formErrors.phone_no = "Phone number must be exactly 10 digits";
+    // }
     if (!captchaVerified) {
       alert("Please complete the reCAPTCHA.");
       return;
@@ -85,7 +80,7 @@ function GetInTouch() {
       );
 
       if (response.ok) {
-        SuccessMessage("Your message has been sent successfully!");
+        alert("Your message has been sent successfully!");
         setFormData({
           name: "",
           lastname: "",
@@ -106,11 +101,13 @@ function GetInTouch() {
           consent: false,
         });
       } else {
-        ErrorMessage("There was an error sending the message.");
+        alert("There was an error sending the message.");
       }
     } catch (error) {
       console.error("Error:", error);
-      ErrorMessage("There was a problem with the server.");
+      alert("There was a problem with the server.");
+    } finally {
+      // setIsLoading(false);
     }
   };
 

@@ -21,7 +21,7 @@ function App() {
       <Navbar/>
       <PageTitle/>
       <LandingPage/>
-      <PlumeriaOverview/>
+      <PlumeriaOverview/>                                                                         
       <Highlights/> 
       <div className='new-gal-plumeria'>
       <InfiniteMovingCardsDemo/>

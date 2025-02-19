@@ -36,27 +36,34 @@ function GetInTouch() {
     e.preventDefault();
     let formErrors = { ...error};
 
-    // if (formData.name === "") formErrors.name = "Please enter name";
-    // // if (formData.name === "") formErrors.name("Please enter name");
-    // if (formData.email === "") {
-    //   formErrors.email = "Please enter email";
+    if (formData.name === "") {
+      ErrorMessage("Please enter name");
+    }
+    if (formData.lastname === "") {
+      ErrorMessage("Please enter lastname");
+    }
+      // "Please enter name";
+    if (formData.email === "") {
+        ErrorMessage( "Please enter email")
+    }
     // } else if (!emailRegex.test(formData.email)) {
     //   formErrors.email = "Please enter a valid email address";
     // }
-    // if (formData.subject === "") formErrors.subject = "Please enter subject";
-    // if (formData.lastname === "") formErrors.lastname = "Please enter lastname";
-    // if (formData.notes === "") formErrors.notes = "Please enter note";
-    // if (formData?.phone_no === "") {
-    //   formErrors.phone_no = "Please enter phone number";
-    // } else if (!/^\d{10}$/.test(formData.phone_no)) {
-    //   formErrors.phone_no = "Phone number must be exactly 10 digits";
-    // }
+    if (formData.subject === "") {
+      ErrorMessage("Please enter subject");
+    }
+    if (formData.notes === "") {
+      ErrorMessage("Please enter note");
+    }
+    if (formData.phone_no === "") {
+      ErrorMessage("please enter valid phone number")
+    }
+  
     if (!captchaVerified) {
-      alert("Please complete the reCAPTCHA.");
+      ErrorMessage("Please complete the reCAPTCHA.");
       return;
     }
-    const hasErrors = Object.values(formErrors).some((err) => err !== "");
-    if (hasErrors) return;
+    
     try {
       // setIsLoading(true);
       console.log("Preparing to send request to backend...",formData);
@@ -80,7 +87,7 @@ function GetInTouch() {
       );
 
       if (response.ok) {
-        alert("Your message has been sent successfully!");
+        SuccessMessage("Your message has been sent successfully!");
         setFormData({
           name: "",
           lastname: "",
@@ -101,11 +108,11 @@ function GetInTouch() {
           consent: false,
         });
       } else {
-        alert("There was an error sending the message.");
+        ErrorMessage("There was an error sending the message.");
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("There was a problem with the server.");
+      ErrorMessage("There was a problem with the server.");
     } finally {
       // setIsLoading(false);
     }

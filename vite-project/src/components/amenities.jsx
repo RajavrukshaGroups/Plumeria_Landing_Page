@@ -10,7 +10,7 @@ function Amenities() {
       <div className="pt-0">
         <h1 className="font-bold pb-14 text-4xl md:text-5xl text-black drop-shadow-lg text-center w-full">
           Amenities
-       </h1>
+        </h1>
         <div className="  bg-gradient-to-r justify-center from-[#ffffff] to-[#ffffff] w-full min-h- flex flex-col md:flex-row p-0">
 
           <div className="pb-10 card-container bg-[#ffffff] w-full md:w-[67%] flex justify-center items-center rounded-xl ">

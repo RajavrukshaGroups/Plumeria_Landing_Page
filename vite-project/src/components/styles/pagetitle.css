@@ -1,0 +1,260 @@
+/* ===================== PAGE TITLE ======================*/
+.breadcrumb-area {
+    position: relative;
+    padding-top: 152px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  /* Ensuring uniform size for all logos */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;  /* Ensure same width */
+    height: 100px; /* Ensure same height */
+    margin: auto;
+    margin-top: -3rem;
+  }
+  
+  .logo-img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the box */
+  }
+  
+  .breadcrumb-new {
+    position: relative;
+    padding-top: 152px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .breadcrumb-area:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #02050b;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    z-index: -1;
+  }
+  
+  .breadcrumb-new:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #02050b;
+    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    z-index: -1;
+  }
+  
+  .breadcrumb-inn {
+    padding-left: 60px;
+  }
+  
+  /* .plumeria-text-img{
+    height: 15px;
+    width: 15px;
+  } */
+  
+  .plum-img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    margin-top: -3rem;
+  }
+  
+  .sylvan-img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    margin-top: -3rem;
+  }
+  
+  .econest-img-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: auto;
+    margin-top: -3rem;
+  }
+  
+  /* Arrow Buttons */
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* Ensure buttons are above the background */
+    transition: background-color 0.3s ease;
+  }
+  
+  .arrow-button:hover {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Slightly less transparent on hover */
+  }
+  
+  .left-arrow {
+    left: 20px; /* Position left arrow */
+  }
+  
+  .right-arrow {
+    right: 20px; /* Position right arrow */
+  }
+  
+  .breadcrumb-inn h1 {
+    color: #fff;
+    font-size: 75px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 65px;
+    margin-bottom: 15px;
+  }
+  
+  .breadcrumb-inn ul li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    padding-right: 45px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    font-family: "Teko", sans-serif;
+    letter-spacing: 3px;
+    font-size: 22px;
+  }
+  
+  .breadcrumb-inn ul li:last-child {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .breadcrumb-inn ul li:before {
+    position: absolute;
+    content: "//";
+    top: 0px;
+    right: 0px;
+  }
+  
+  .breadcrumb-inn ul li:last-child:before {
+    display: none;
+  }
+  
+  .breadcrumb-inn ul li a {
+    color: #fff;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 33px;
+    border: 1px solid #b78d65;
+    font-size: 16px;
+  }
+  
+  .subtitle {
+    color: white;
+  }
+  
+  .syl-retreat-title {
+    font-family: "Kepler Std", sans-serif;
+    font-style: italic;
+  }
+  
+  @media (max-width: 430px) {
+    .breadcrumb-area {
+      padding-top: 85px;
+      padding-bottom: 50px;
+      background-position: bottom center;
+    }
+    .breadcrumb-new {
+      padding-top: 85px;
+      padding-bottom: 50px;
+      background-position: right center;
+    }
+    .subtitle {
+      text-align: center;
+      margin-left: -60px;
+      display: block;
+    }
+    .plum-img-text {
+      margin-left: -60px;
+    }
+    .sylvan-img-text {
+      margin-left: -60px;
+      width: 362px;
+    }
+    .econest-img-text {
+      width: 200px;
+    }
+  }
+  @media (max-width: 991px) {
+    .breadcrumb-area .hero-social p {
+      display: none;
+    }
+    .breadcrumb-new .hero-social p {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    .breadcrumb-inn h1 {
+      font-size: 50px;
+      letter-spacing: 4px;
+      line-height: 55px;
+      margin-left: -44px;
+    }
+    .breadcrumb-inn {
+      padding-left: 60px;
+    }
+  }
+  @media (width: 1024px) {
+    .breadcrumb-inn {
+      padding-left: 60px;
+    }
+  }
+  
+  .new-gal-plumeria{
+    margin-top: -5rem;
+  }
+
+ 

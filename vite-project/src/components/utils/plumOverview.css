@@ -1,0 +1,133 @@
+.plumeria-overview {
+    text-align: center;
+    padding: 3rem 1rem;
+    font-family: "Arial", sans-serif;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .plumeria-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.05rem;
+    text-align: center;
+  }
+  
+  .overview-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .overview-box {
+    width: calc(33.333% - 2rem);
+    min-width: 280px;
+    padding: 1.25rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Ensuring that text remains readable */
+  .overview-box h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #a38b5b;
+  }
+  
+  .overview-box p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .overview-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: auto;
+  }
+  
+  .overview-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .icon-text {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .overview-box {
+      width: calc(50% - 2rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .plumeria-overview {
+      padding: 2rem 1rem;
+    }
+  
+    .plumeria-title {
+      font-size: 1.75rem;
+    }
+  
+    .overview-box {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+  
+  @media (max-width: 430px) {
+    .location-plum {
+      letter-spacing: -0.02rem;
+    }
+  
+    .plumeria-title {
+      font-size: 1.5rem;
+    }
+  
+    .overview-box h3 {
+      font-size: 1.1rem;
+    }
+  
+    .overview-box p {
+      font-size: 0.9rem;
+    }
+  
+    .icon-text {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Large Screens Fix */
+  @media (min-width: 1560px) {
+    .plumeria-overview {
+      max-width: 1400px;
+    }
+  
+    .overview-container {
+      max-width: 1300px;
+      justify-content: center;
+    }
+  }
+  
